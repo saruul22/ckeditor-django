@@ -31,7 +31,9 @@ SECRET_KEY = 'django-insecure-$=(c$tbq+q^uifid-5m+p7qt1@^&pg$a_i5j0k(mgw0_j459a&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.137',
+]
 
 
 # Application definition
@@ -46,6 +48,8 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'pages.apps.PagesConfig',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
